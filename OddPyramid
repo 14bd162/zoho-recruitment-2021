@@ -15,14 +15,14 @@ public class OddLetterPyramid {
 			System.out.println("");
 			temp--;
 		}
-		for (int m = 0,p=0; m<mid;m++,p++) {
+		for (int m = 0; m<mid; m++) {
 			for (int n=0; n<temp-1;n++) {
 				System.out.print(" ");
 			}
 			for (int k = mid;k<length; k++) {
 				System.out.print(letter.charAt(k));
 			}
-			for (int n = 0;n<mid-2+m;n++) {
+			for (int n = 0;n<m+1;n++) {
 				System.out.print(letter.charAt(n));
 			}
 			System.out.println("");
